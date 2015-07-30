@@ -21,7 +21,7 @@ public class FaceDetctTry {
         CanvasFrame canvas = new CanvasFrame("My Image");
         canvas.setDefaultCloseOperation(CanvasFrame.EXIT_ON_CLOSE);
         
-        CanvasFrame canvas2=new CanvasFrame("Blur");
+       // CanvasFrame canvas2=new CanvasFrame("Blur");
         
         int bb = 0;
         while (true) {
@@ -45,7 +45,7 @@ public class FaceDetctTry {
                 cvSmooth(small, small, CV_MEDIAN, 13);
                 
                // cvShowImage("Blur", small);
-                canvas2.showImage(small);
+               // canvas2.showImage(small);
                 
                 IplImage gray = IplImage.create(small.width(),small.height(), IPL_DEPTH_8U, 1);
                 cvCvtColor(small, gray, CV_BGR2GRAY);
